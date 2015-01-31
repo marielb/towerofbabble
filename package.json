@@ -1,0 +1,23 @@
+{
+	"name": "Tower-of-Babble",
+	"version": "0.0.0-2",
+	"description": "Language-learning through randomized chat",
+	"dependencies": {
+		"socket.io": "latest",
+		"express": "latest",
+		"jade": "latest",
+		"backbone": "latest",
+		"jquery": "latest",
+		"download.jqueryui.com": "latest",
+		"bing-translate": "latest",
+		"less-middleware": "latest"
+	},
+	"author": "Mariel Bartolome",
+	"subdomain": "towerofbabble",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"engines": {
+		"node": "0.10.x"
+	}
+}

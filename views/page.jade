@@ -1,0 +1,60 @@
+doctype html
+html
+	head
+		title= "Tower of Babble"
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+		script(src='/chat.js')
+		script(src='/socket.io/socket.io.js')
+		link(rel='stylesheet', href='app.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Raleway:600,900')
+	body
+		h1
+			span.subtitle(data-shadow-text="Tower of Babble").
+				tower of babble
+			br
+			| language learning + randomized chat
+		#languages
+			div.mylang
+				span
+					| I'm fluent in
+				.dropdown
+					select.dropdown-select
+						option(value='en') English
+						option(value='zh') Chinese
+						option(value='fr') French
+						option(value='de') German
+						option(value='hi') Hindi
+						option(value='it') Italian
+						option(value='ja') Japanese
+						option(value='ko') Korean
+						option(value='fa') Persian
+						option(value='ru') Russian
+						option(value='es') Spanish
+						option(value='vi') Vietnamese 
+
+			div.learning
+				span
+					| I want to learn
+				.dropdown
+					select.dropdown-select
+						option(value='en') English
+						option(value='zh') Chinese
+						option(value='fr') French
+						option(value='de') German
+						option(value='hi') Hindi
+						option(value='it') Italian
+						option(value='ja') Japanese
+						option(value='ko') Korean
+						option(value='fa') Persian
+						option(value='ru') Russian
+						option(value='es') Spanish
+						option(value='vi') Vietnamese 
+			div.submit
+				input#name(placeholder='Name')
+				button#chat_button Chat
+		#chatarea
+			#chatbox
+			.controls
+				textarea#field(placeholder="Enter a message")
+				input#send(type='hidden', value='send')
+			
